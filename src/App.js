@@ -138,66 +138,6 @@ function App() {
   const uploadImage = async (imageData) => {
     setMessage("Uploading Image...")
 
-  //   // Create instance to NFT.Storage
-  //   const nftstorage = new NFTStorage({
-  //     token: process.env.REACT_APP_NFT_STORAGE_API_KEY?.replace(/"/g, "").trim(),
-  //   });
-  //   console.log("NFTStorage store:", typeof nftstorage.store);
-
-  //    try {
-  //   const res = await fetch("http://localhost:5050/api/upload-nft", {
-  //     method: "POST",
-  //     headers: { "Content-Type": "application/json" },
-  //     body: JSON.stringify({ imageData, name, description }),
-  //   });
-
-  //   const data = await res.json();
-  //   if (!res.ok) throw new Error(data.error || "Upload failed");
-
-  //   console.log("NFT CID:", data.ipnft);
-  //   console.log("Metadata URL:", data.url);
-  //   return data;
-  // } catch (err) {
-  //   console.error("Upload error:", err);
-  //   alert("Failed to upload NFT: " + err.message);
-  // }
-
-    // // Send request to store image
-    // const { ipnft } = await nftstorage.store({
-    //   image: new File([imageData], "image.jpeg", { type: "image/jpeg" }),
-    //   name: name,
-    //   description: description,
-    // })
-
-    //   if (!imageData) return
-
-    // try {
-    //   // setUploadStatus('Getting upload URL...')
-    //   const urlResponse = await fetch(`http://localhost:5050/presigned_url`, {
-    //     method: "GET",
-    //     headers: {
-    //       // Handle your own server authorization here
-    //     }
-    //   })
-    //   const data = await urlResponse.json()
-
-    //   // setUploadStatus('Uploading file...')
-
-    //   const upload = await pinata.upload.public
-    //     .file(imageData)
-    //     .url(data.url)
-
-    //   if (upload.cid) {
-    //     // setUploadStatus('File uploaded successfully!')
-    //     const ipfsLink = await pinata.gateways.public.convert(upload.cid)
-    //     // setLink(ipfsLink)
-    //   } else {
-    //     // setUploadStatus('Upload failed')
-    //   }
-    // } catch (error) {
-    //   // setUploadStatus(`Error: ${error instanceof Error ? error.message : String(error)}`)
-    // }
-
 if (!imageData) return;
 
   try {
