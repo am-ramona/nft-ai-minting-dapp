@@ -38,11 +38,11 @@ function App() {
     const provider = new ethers.providers.Web3Provider(window.ethereum, "any")
     setProvider(provider)
 
-    console.log('provider', provider)
+    // console.log('provider', provider)
 
     const network = await provider.getNetwork()
 
-    console.log('network', network)
+    // console.log('network', network)
 
     if (!config[network.chainId]) {
       alert(`Unsupported network: ${network.chainId}, please connect to the Hardhat network`)
@@ -165,7 +165,33 @@ function App() {
 
     const signer = await provider.getSigner()
     const transaction = await nft.connect(signer).mint(tokenURI, { value: ethers.utils.parseUnits("1", "ether") })
-    await transaction.wait()
+    // await transaction.wait()
+    const receipt = await transaction.wait();
+
+    if (receipt.status !== 1) {
+    throw new Error("Mint failed");
+  }
+
+  const transferEvent = receipt.events.find(
+    (e) => e.event === "Transfer"
+  );
+
+  const tokenId = transferEvent.args.tokenId.toString();
+
+  const owner = await nft.ownerOf(tokenId);
+  const uri = await nft.tokenURI(tokenId);
+
+  console.log({
+    tokenId,
+    owner,
+    uri,
+    txHash: receipt.transactionHash,
+  });
+
+  setMessage(`NFT minted! Token ID: ${tokenId}`);
+
+//  console.log("Tx hash:", receipt.transactionHash);
+//  console.log("Status:", receipt.status); 
   }
 
   useEffect(() => {
@@ -173,7 +199,7 @@ function App() {
       loadBlockchainData()
     }
 
-    console.log('account', account)
+    // console.log('account', account)
 
     if (window.ethereum) {
       window.ethereum.on('chainChanged', () => {
