@@ -72,13 +72,8 @@ function App() {
 
     setIsWaiting(true)
 
-    // Call AI API to generate a image based on description
     const imageData = await createImage()
-
-    // Upload image to IPFS (NFT.Storage)
     const url = await uploadImage(imageData)
-
-    // Mint NFT
     await mintImage(url)
 
     setIsWaiting(false)
@@ -101,7 +96,6 @@ function App() {
         throw new Error(`HTTP error! Status: ${response.status}`);
       }
 
-      // Convert response to blob
       const blob = await response.blob();
       // Create a temporary URL to display
       const url = URL.createObjectURL(blob);
@@ -109,14 +103,11 @@ function App() {
       return url;
     } catch (err) {
       console.error("Fetch error:", err);
-      // setError("Failed to generate image. Check console for details.");
     } finally {
       setIsWaiting(false);
     }
 
   }
-
-  console.log("process.env.REACT_SERVER_URL", process.env.REACT_SERVER_URL)
 
   const uploadImage = async (imageData) => {
     setMessage("Uploading Image...")
@@ -124,11 +115,10 @@ function App() {
     if (!imageData) return;
 
     try {
-      // 1️⃣ Get presigned URL from your server
+      // 1️⃣ Get presigned URL from the server
       const urlResponse = await fetch("http://localhost:5050/presigned_url");
       const { url: presignedUrl } = await urlResponse.json();
 
-      // 2️⃣ Convert base64 / dataURL to Blob
       const blob = await (await fetch(imageData)).blob();
       console.log("presignedUrl", presignedUrl)
 
@@ -150,7 +140,7 @@ function App() {
       console.log("Upload successful!");
 
       // 4️⃣ Generate a permanent gateway URL for NFT metadata
-      // You can extract the CID from the presigned URL
+      // The CID is extracted from the presigned URL
       const urlObj = new URL(presignedUrl);
       const cid = urlObj.pathname.split("/")[3]; // example: /v3/files/<CID>
       const ipfsLink = `https://gateway.pinata.cloud/ipfs/${cid}`;
@@ -162,7 +152,6 @@ function App() {
       console.error(err);
       console.log(`Upload failed: ${err.message}`);
     }
-
 
     // Save the URL
     // const url = `https://ipfs.io/ipfs/${ipnft}/metadata.json`
