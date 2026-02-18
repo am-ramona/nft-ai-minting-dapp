@@ -66,22 +66,24 @@ Built to demonstrate production-level Web3 architecture, wallet integration, and
 NFT minting UX is often slow, confusing, and error-prone.
 
 This project explores how to:
-
-• Simplify wallet interactions
-• Reduce mint friction
-• Improve transaction clarity
-• Integrate AI asset generation with blockchain minting
+<ul>
+<li>Simplify wallet interactions</li>
+<li>Reduce mint friction</li>
+<li>Improve transaction clarity</li>
+<li>Integrate AI asset generation with blockchain minting</li>
+</ul>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Key Features
-
-• AI-generated NFT assets using Pollinations AI
-• Smart contract minting with Solidity + Hardhat
-• Wallet interaction via Ethers.js
-• IPFS storage via Pinata
-• Full-stack architecture (frontend + backend + smart contracts)
-• Scalable minting workflow with clear user feedback
+<ul>
+<li>AI-generated NFT assets using Pollinations AI</li>
+<li>Smart contract minting with Solidity + Hardhat</li>
+<li>Wallet interaction via Ethers.js</li>
+<li>IPFS storage via Pinata</li>
+<li>Full-stack architecture (frontend + backend + smart contracts)</li>
+<li>Scalable minting workflow with clear user feedback</li>
+</ul>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -103,9 +105,9 @@ This project explores how to:
 
 ![Product Architecture Screen Shot][architecture-screenshot]
 
-• Frontend → Smart Contract interaction
-• Backend → IPFS + AI generation
-• Wallet → Transaction signing
+* Frontend → Smart Contract interaction
+* Backend → IPFS + AI generation
+* Wallet → Transaction signing
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
