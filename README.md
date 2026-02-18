@@ -80,6 +80,7 @@ This project explores how to:
 <li>Wallet interaction via Ethers.js</li>
 <li>IPFS storage via Pinata</li>
 <li>Full-stack architecture (frontend + backend + smart contracts)</li>
+<li>Responsive UI with loading/error states</li> 
 <li>Scalable minting workflow with clear user feedback</li>
 </ul>
 
@@ -106,6 +107,15 @@ This project explores how to:
 * Frontend → Smart Contract interaction
 * Backend → IPFS + AI generation
 * Wallet → Transaction signing
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Architecture Highlights
+
+* Optimized error handling  
+* Modular smart-contract interaction layer  
+* Component-driven UI design  
+* Ready for multi-chain expansion  
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
