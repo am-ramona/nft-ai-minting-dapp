@@ -198,6 +198,8 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 * [ ] Multi-chain minting (Polygon / zkSync)
 * [ ] Batch minting
 * [ ] Improved error handling
+* [ ] On-chain metadata option
+* [ ] NFT marketplace integration
 
 See the [open issues](https://github.com/am-ramona/NFT-AI-Generator/issues) for a full list of proposed features (and known issues).
 
