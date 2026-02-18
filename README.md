@@ -20,8 +20,6 @@
   </p>
 </div>
 
-
-
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
@@ -49,7 +47,6 @@
   </ol>
 </details>
 
-
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
@@ -76,6 +73,7 @@ This project explores how to:
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Key Features
+
 <ul>
 <li>AI-generated NFT assets using Pollinations AI</li>
 <li>Smart contract minting with Solidity + Hardhat</li>
@@ -91,7 +89,7 @@ This project explores how to:
 
 * [![React][React.js]][React-url]
 * [![Javascript][javascript.com]][Javascript-url]
-* [![Web3 UX flows][web3uxflows.js]][Web3UXFlows-url] 
+* [![Web3 UX flows][web3uxflows.js]][Web3UXFlows-url]
 * [![Solidity][Soliditylang.org]][Solidity-url]
 * [![Hardhat][Hardhat.org]][Hardhat-url]
 * [![Ethers.js][Ethers.io]][Ethers-url]
@@ -118,15 +116,15 @@ This project explores how to:
 3. Metadata uploaded to IPFS
 4. Smart contract mints NFT
 5. Transaction confirmation shown in UI
-   
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### What I Learned
 
-• Designing low-friction Web3 mint UX
-• Handling async blockchain transactions
-• Integrating AI + IPFS + Ethereum pipeline
-• Structuring full-stack Web3 apps
+* Designing low-friction Web3 mint UX
+* Handling async blockchain transactions
+* Integrating AI + IPFS + Ethereum pipeline
+* Structuring full-stack Web3 apps
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -135,35 +133,46 @@ This project explores how to:
 
 ### Prerequisites
 
-- Install [NodeJS](https://nodejs.org/en/)
+* Install [NodeJS](https://nodejs.org/en/)
 
 ### Installation
 
 1. Clone/Download the Repository
 
 2. Install Dependencies:
+
    ```sh
    npm install
    ```
+
 3. Run tests
+
    ```sh
-   $ npx hardhat test
+   npx hardhat test
    ```
+
 4. Start Hardhat node
+
    ```js
-   $ npx hardhat node
+   npx hardhat node
    ```
+
 5. Run deployment script in a separate terminal execute:
+
    ```sh
-   $ npx hardhat run ./scripts/deploy.js --network localhost
+   npx hardhat run ./scripts/deploy.js --network localhost
    ```
+
 6. Start backend
+
    ```sh
-   $ nodemon server.js
+   nodemon server.js
    ```
+
 7. Start frontend
+
    ```sh
-   $ npm run start
+   npm run start
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -177,20 +186,18 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
-
-
 <!-- ROADMAP -->
 ## Roadmap
 
 <!-- - [x] Add Changelog -->
-- [ ] Change message notifications for
+* [ ] Change message notifications for
 
-    - [ ] Connect Wallet
-    - [ ] Form inputs ( name and Description || Prompt )
-- [ ] Gas optimization strategies
-- [ ] Multi-chain minting (Polygon / zkSync)
-- [ ] Batch minting
-- [ ] Improved error handling
+  * [ ] Connect Wallet
+  * [ ] Form inputs ( name and Description || Prompt )
+* [ ] Gas optimization strategies
+* [ ] Multi-chain minting (Polygon / zkSync)
+* [ ] Batch minting
+* [ ] Improved error handling
 
 See the [open issues](https://github.com/am-ramona/NFT-AI-Generator/issues) for a full list of proposed features (and known issues).
 
@@ -203,8 +210,6 @@ Distributed under the Unlicense License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
-
-
 <!-- CONTACT -->
 <!-- ## Contact
 
@@ -214,14 +219,8 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
-
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 
 [product-screenshot]: src/assets/images/ai-nft-generator.png
 [architecture-screenshot]: src/assets/images/Miro_design-architecture.png
@@ -244,7 +243,6 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 [Pollinations-url]: https://pollinations.ai/
 [Node.js]: https://img.shields.io/badge/Node-Server-58a846?style=for-the-badge&logo=node.js&logoColor=58a846
 [Node-url]: https://nodejs.org/
-
 
 <!-- # NFT-AI-Generator
 
