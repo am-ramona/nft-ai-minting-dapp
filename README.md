@@ -4,19 +4,19 @@
 <br />
 <div align="center">
 
-  <h1 align="center">NFT AI Generator</h3>
+  <h1 align="center">NFT AI Minting DApp</h3>
 
   <p align="center">
    A Blockchain NFT Minting DApp with AI-generated assets and production-grade mint UX!
     <br />
-    <a href="https://github.com/am-ramona/NFT-AI-Generator"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/am-ramona/nft-ai-minting-dapp"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/am-ramona/NFT-AI-Generator">View Demo</a>
+    <a href="https://github.com/am-ramona/nft-ai-minting-dapp">View Demo</a>
     &middot;
-    <a href="https://github.com/am-ramona/NFT-AI-Generator/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
+    <a href="https://github.com/am-ramona/nft-ai-minting-dapp/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     &middot;
-    <a href="https://github.com/am-ramona/NFT-AI-Generator/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+    <a href="https://github.com/am-ramona/nft-ai-minting-dapp/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
   </p>
 </div>
 
@@ -210,7 +210,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 * [ ] On-chain metadata option
 * [ ] NFT marketplace integration
 
-See the [open issues](https://github.com/am-ramona/NFT-AI-Generator/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/am-ramona/nft-ai-minting-dapp/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
